@@ -7,11 +7,11 @@ Welcome to my GitHub profile! Here, you'll discover a collection of my projects,
 
 ## **📊 GitHub Stats**
 
-![Furyashnyy's Stats](https://github-readme-stats.vercel.app/api?username=Furyashnyy&theme=dark&show_icons=true&hide_border=true&count_private=true)
+![Furyashnyy's Stats](https://github-readme-stats.vercel.app/api?username=levonze&theme=dark&show_icons=true&hide_border=true&count_private=true)
 
-![Furyashnyy's Streak](https://github-readme-streak-stats.herokuapp.com/?user=Furyashnyy&theme=dark&hide_border=true)
+![Furyashnyy's Streak](https://github-readme-streak-stats.herokuapp.com/?user=levonze&theme=dark&hide_border=true)
 
-![Furyashnyy's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Furyashnyy&theme=dark&show_icons=true&hide_border=true&layout=compact)
+![Furyashnyy's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=levonze&theme=dark&show_icons=true&hide_border=true&layout=compact)
 
 ---
 
