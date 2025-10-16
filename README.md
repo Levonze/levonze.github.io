@@ -1,4 +1,5 @@
- <div align="center">
+.
+<div align="center">
 
 # **🌟 Welcome to Levonze's GitHub Profile 🌟**
 Welcome to my GitHub profile! Here, you'll discover a collection of my projects, contributions, and stats. Feel free to explore and connect with me through the links below. 🚀
