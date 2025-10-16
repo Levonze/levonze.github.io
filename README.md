@@ -17,12 +17,12 @@ Welcome to my GitHub profile! Here, you'll discover a collection of my projects,
 
 ## **🔗 Connect With Me**
 
-<a href="https://www.youtube.com/@furyashnyy">
-  <img src="https://img.shields.io/youtube/channel/subscribers/UCx2OpXtIN6CpjJh2YeqVEOA?label=Subscribe&logo=youtube&style=for-the-badge" alt="YouTube Channel">
+<a href="https://www.youtube.com/@levonze">
+  <img src="https://img.shields.io/youtube/channel/subscribers/UCWJg8dDOq3C46n09GS7CgEw?label=Subscribe&logo=youtube&style=for-the-badge" alt="YouTube Channel">
 </a>
 <br />
 
-<a href="https://discord.gg/S86AtNGX9f">
+<a href="https://discord.com/app">
   <img src="https://img.shields.io/discord/1409618044245905541?color=blueviolet&label=Discord&logo=discord&logoColor=white&style=for-the-badge" alt="Discord">
 </a>
 <br />
