@@ -1,4 +1,3 @@
-.
 <div align="center">
 
 # **🌟 Welcome to Levonze's GitHub Profile 🌟**
