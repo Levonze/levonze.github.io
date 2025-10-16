@@ -1,4 +1,4 @@
-<div align="center">
+ <div align="center">
 
 # **🌟 Welcome to Levonze's GitHub Profile 🌟**
 Welcome to my GitHub profile! Here, you'll discover a collection of my projects, contributions, and stats. Feel free to explore and connect with me through the links below. 🚀
@@ -27,8 +27,8 @@ Welcome to my GitHub profile! Here, you'll discover a collection of my projects,
 </a>
 <br />
 
-<a href="https://furry-dev.net/furyashnyy">
-  <img src="https://img.shields.io/website?down_color=Red&down_message=Offline&label=www.furry-dev.net&style=for-the-badge&up_color=Green&up_message=Online&url=https%3A%2F%2Feuphoriadevelopment.uk" alt="Project Era">
+<a href="https://lerimstudios.ru">
+  <img src="https://img.shields.io/website?down_color=Red&down_message=Offline&label=lerimstudios.ru&style=for-the-badge&up_color=Purple&up_message=Online&url=https%3A%2F%2Feuphoriadevelopment.uk" alt="Project Era">
 </a>
 
 ---
