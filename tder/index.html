@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Deception: Return</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define CSS variable for the accent color */
+        :root {
+            --progress-color: #00ffff;
+        }
+
+        /* Custom Keyframe Animation for Shimmer Effect */
+        @keyframes shimmer-move {
+            from { background-position: 0 0; }
+            to { background-position: 50px 0; }
+        }
+
+        /* Applying the animation and layered background */
+        .animated-progress {
+            /* Use the CSS variable for background color */
+            background-color: var(--progress-color); 
+            /* Create repeating diagonal stripes using linear gradient */
+            background-image: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent
+            );
+            background-size: 50px 50px; 
+            animation: shimmer-move 1.5s linear infinite;
+            /* Use the CSS variable for the glow effect */
+            box-shadow: 0 0 10px var(--progress-color), 0 0 20px var(--progress-color), 0 0 30px var(--progress-color);
+        }
+
+        /* Custom font */
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-black text-white h-screen flex justify-center items-center p-4">
+
+    <div class="w-full max-w-xl">
+        
+        <!-- Header -->
+        <h1 class="text-center text-3xl font-extrabold mb-8 tracking-wider text-[#00ffff] drop-shadow-lg">
+            TINY DECEPTION DEVELOPMENT PROGRESS
+        </h1>
+
+        <!-- Progress Bar Container -->
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-900 border border-gray-700">
+            
+            <!-- Progress Bar Fill -->
+            <div 
+                id="progressBar"
+                class="animated-progress h-10 transition-all duration-500 ease-out flex items-center px-4"
+            >
+                <span id="progressInternalText" class="text-black font-bold text-sm tracking-wider">
+                    <!-- Text will be set by JavaScript -->
+                </span>
+            </div>
+
+        </div>
+        
+        <!-- Percentage Text below the bar -->
+        <p class="text-center mt-4 text-xl font-medium text-gray-400">
+            Progress: <span class="font-extrabold text-[#00ffff]" id="progressExternalText"></span> Complete
+        </p>
+
+    </div>
+
+    <script>
+        // CRITICAL: CHANGE ONLY THIS VARIABLE TO UPDATE THE BAR
+        const PROGRESS_PERCENTAGE = 21; 
+        
+        // Ensure the percentage is clamped between 0 and 100
+        const clampedPercentage = Math.max(0, Math.min(100, PROGRESS_PERCENTAGE));
+        
+        const progressBar = document.getElementById('progressBar');
+        const progressInternalText = document.getElementById('progressInternalText');
+        const progressExternalText = document.getElementById('progressExternalText');
+
+        // Update the bar's style and all text elements
+        progressBar.style.width = `${clampedPercentage}%`;
+        
+        const displayValue = `${clampedPercentage}%`;
+
+        progressInternalText.textContent = displayValue;
+        progressExternalText.textContent = displayValue;
+
+        // If the progress is very low, move the internal text to the right for visibility
+        if (clampedPercentage < 15) {
+             progressInternalText.classList.remove('text-black');
+             progressInternalText.classList.add('text-white', 'ml-2');
+        }
+
+    </script>
+</body>
+</html>
+
