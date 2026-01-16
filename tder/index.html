@@ -9,7 +9,7 @@
     <style>
         /* Define CSS variable for the accent color */
         :root {
-            --progress-color: #00ffff;
+            --progress-color: #ff0000;
         }
 
         /* Custom Keyframe Animation for Shimmer Effect */
@@ -76,7 +76,7 @@
 
     <script>
         // CRITICAL: CHANGE ONLY THIS VARIABLE TO UPDATE THE BAR
-        const PROGRESS_PERCENTAGE = 21; 
+        const PROGRESS_PERCENTAGE = 100; 
         
         // Ensure the percentage is clamped between 0 and 100
         const clampedPercentage = Math.max(0, Math.min(100, PROGRESS_PERCENTAGE));
@@ -88,7 +88,7 @@
         // Update the bar's style and all text elements
         progressBar.style.width = `${clampedPercentage}%`;
         
-        const displayValue = `${clampedPercentage}%`;
+        const displayValue = `${clampedPercentage}%%`;
 
         progressInternalText.textContent = displayValue;
         progressExternalText.textContent = displayValue;
