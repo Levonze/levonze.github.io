@@ -215,7 +215,7 @@ section {
 
 /* Project Thumbnail - Адаптивное изображение */
 .project-thumbnail {
-    width: 90%;
+    width: 98%;
     height: 200px;
     object-fit: cover;
     display: block;
@@ -311,7 +311,7 @@ footer {
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hero h1 {
         font-size: 2.5rem;
     }
