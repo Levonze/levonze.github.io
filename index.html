@@ -1,10 +1,101 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Levonze GitHub Website</title>
-  <link href="/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Rainov | Software Developer</title>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-  <center><h3>Games</h3>
-  <a href="/tder"><p>Tiny Deception: Return</p></a>
-  </center>
+    <header>
+        <div class="logo">LEVONZE</div>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hi, Name's <span>Novel Rainov</span></h1>
+        <div>
+            <a href="#projects" class="btn">Projects</a>
+            <!--<a href="#contact" class="btn btn-outline">Contact</a>-->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About & Skills</h2>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto; color: var(--text-secondary);">
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-tag"><img src="assets/icons/python.svg" height="15"> Python</div>
+            <div class="skill-tag"><img src="assets/icons/godotengine.svg" height="15"> GDScript</div>
+            <div class="skill-tag"><img src="assets/icons/CSharp.svg" height="16"> C#</div>
+        </div>
+        <br><br>
+        <div class="skills-grid">
+            <div class="skill-tag"><img src="assets/icons/unrealengine.svg" height="15"> Unreal Engine</div>
+            <div class="skill-tag"><img src="assets/icons/godotengine.svg" height="15"> Godot Engine</div>
+            <div class="skill-tag"><img src="assets/icons/robloxstudio.svg" height="15"> Roblox Studio</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title"><font style="color: #2994ff">Tiny Deception</font>: <font style="color: #cc01f7">Return</font></h3>
+                <img class="project-thumbnail" src="assets/project/TDeR.png" height="140">
+                <p class="project-description">Horror game inspired by Minecraft and Dark Deception</p>
+                <div class="project-links">
+                    <a href="https://gamejolt.com/games/TDe_Return/813731"><img src="assets/icons/gamejolt.svg" height="15"> GameJolt</a>
+                    <a href="https://lerimst.itch.io/tder"><img src="assets/icons/itch.io.svg" height="15"> Itch.Io</a>
+                </div>
+                <h4>Made with...</h3>
+                <div class="project-links">
+                    <a href="https://unrealengine.com"><img src="assets/icons/unrealengine.svg" height="15"> Unreal Engine</a>
+                    <a href="https://blender.org"><img src="assets/icons/blender.svg" height="15"> Blender</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Delta Collection</h3>
+                <img class="project-thumbnail" src="assets/noimage.svg" height="140">
+                <p class="project-description">Story shooter game that tells the story of Novel, Mia and a few other "OtherWorlders".</p>
+                <h4 style="color:red;">Project is currently don't have any links</h4>
+                <br>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+      <div style="margin-top: 3rem; font-size: 1.5rem;">
+          <h2 class="section-title">Social Media</h2>
+            <a href="https://github.com/levonze" style="margin: 0 10px;"><img src="assets/icons/github.svg" height="15"> GitHub</a>
+            <a href="https://youtube.com/@levonze" style="margin: 0 10px;"><img src="assets/icons/youtube.svg" height="15"> YouTube</a>
+            <a href="https://t.me/lerim_studios" style="margin: 0 10px;"><img src="assets/icons/telegram.svg" height="15"> Telegram</a>
+        </div>
+    </section>
+
+    <!--
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact me</h2>
+        <p>Problems? Ideas? Suggestions?<br>Ready to talk!</p>
+        <a class="btn">EMail me</a>
+    </section>
+    -->
+
+    <footer>
+        <p>&copy; 2026 Novel Rainov.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+</html>

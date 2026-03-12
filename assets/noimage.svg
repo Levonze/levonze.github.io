@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="200" fill="#000"/>
+    
+    <!-- C# Code Text -->
+    <text x="20" y="30" font-family="monospace" font-size="14" fill="#6a9955">// Image placeholder</text>
+    <text x="20" y="50" font-family="monospace" font-size="14" fill="#569cd6">using</text>
+    <text x="65" y="50" font-family="monospace" font-size="14" fill="#d4d4d4">System;</text>
+    
+    <text x="20" y="75" font-family="monospace" font-size="14" fill="#569cd6">class</text>
+    <text x="65" y="75" font-family="monospace" font-size="14" fill="#d4d4d4">Program {</text>
+    
+    <text x="40" y="95" font-family="monospace" font-size="14" fill="#569cd6">static void</text>
+    <text x="135" y="95" font-family="monospace" font-size="14" fill="#d4d4d4">Main() {</text>
+    
+    <text x="60" y="115" font-family="monospace" font-size="14" fill="#d4d4d4">Console.</text>
+    <text x="122" y="115" font-family="monospace" font-size="14" fill="#dcdcaa">WriteLine</text>
+    <text x="192" y="115" font-family="monospace" font-size="14" fill="#d4d4d4">(</text>
+    <text x="200" y="115" font-family="monospace" font-size="14" fill="#ce9178">"IMAGE_NOT_FOUND"</text>
+    <text x="330" y="115" font-family="monospace" font-size="14" fill="#d4d4d4">);</text>
+    
+    <text x="60" y="135" font-family="monospace" font-size="14" fill="#569cd6">throw new</text>
+    <text x="135" y="135" font-family="monospace" font-size="14" fill="#4ec9b0">FileNotFoundException</text>
+    <text x="296" y="135" font-family="monospace" font-size="14" fill="#d4d4d4">();</text>
+    
+    <text x="40" y="155" font-family="monospace" font-size="14" fill="#d4d4d4">}</text>
+    <text x="20" y="175" font-family="monospace" font-size="14" fill="#d4d4d4">}</text>
+</svg>
