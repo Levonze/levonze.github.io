@@ -76,7 +76,7 @@
 
     <script>
         // CRITICAL: CHANGE ONLY THIS VARIABLE TO UPDATE THE BAR
-        const PROGRESS_PERCENTAGE = 100; 
+        const PROGRESS_PERCENTAGE = 1; 
         
         // Ensure the percentage is clamped between 0 and 100
         const clampedPercentage = Math.max(0, Math.min(100, PROGRESS_PERCENTAGE));
@@ -88,7 +88,7 @@
         // Update the bar's style and all text elements
         progressBar.style.width = `${clampedPercentage}%`;
         
-        const displayValue = `Game Canceled` //`${clampedPercentage}`;
+        const displayValue = `${clampedPercentage}`;
 
         progressInternalText.textContent = displayValue;
         progressExternalText.textContent = displayValue;
