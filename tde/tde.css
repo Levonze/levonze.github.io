@@ -92,3 +92,20 @@
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+@media (max-width: 900px) {
+    .tder, .tdels, .tdel {
+        padding: 0 0.5rem;
+
+        & p {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin-bottom: 2rem;
+        }
+    }
+
+    .logo{
+        height: 45px;
+    }
+}
