@@ -1,11 +1,11 @@
 /* --- CSS VARIABLES & RESET --- */
 :root {
-    --bg-color: #0f172a;
-    --card-bg: #1e293b;
+    --bg-color: #000;
+    --card-bg: #202;
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
-    --accent: #38bdf8;
-    --accent-hover: #0ea5e9;
+    --accent: #a0a;
+    --accent-hover: #b0b;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -33,13 +33,14 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.95);
+    background-color: #202d;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    border-bottom: 1px solid #334155;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #000;
 }
 
 .logo {
@@ -75,6 +76,15 @@ nav a:hover {
     align-items: center;
     text-align: center;
     padding: 0 1rem;
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: -20px;
+        background: url('assets/project/tder/scr3.png') no-repeat center center/cover;
+        filter: blur(6px) brightness(1); 
+        z-index: -1;
+    }
 }
 
 .hero h1 {
@@ -213,13 +223,13 @@ section {
     border-color: var(--accent);
 }
 
-/* Project Thumbnail - Адаптивное изображение */
 .project-thumbnail {
     width: 98%;
     height: 200px;
     object-fit: cover;
     display: block;
     border-bottom: 1px solid #334155;
+    aspect-ratio: 16/9;
     margin: 0 auto;
 }
 
@@ -267,6 +277,18 @@ section {
 .project-links a:hover {
     background-color: var(--accent);
     color: var(--bg-color);
+}
+
+.prj-btn {
+    margin: 1rem auto;
+    background-color: var(--accent);
+    color: var(--bg-color);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid var(--accent);
+    display: block; 
+    width: 8rem;
+    text-align: center;
 }
 
 /* --- CONTACT --- */

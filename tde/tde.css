@@ -1,0 +1,82 @@
+.tder, .tdels, .tdel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+
+    position: relative;
+    overflow: hidden; 
+
+    & p {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.tder::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    
+    background: url('/assets/project/tder/scr3.png') no-repeat center center/cover;
+    
+    filter: blur(6px) brightness(0.4); 
+    
+    z-index: -1;
+}
+
+.tdels::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    
+    background: url('/assets/project/tder/scr4.png') no-repeat center center/cover;
+    
+    
+    filter: blur(6px) brightness(0.4); 
+    
+    z-index: -1;
+}
+
+.tdel::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    
+    background: url('/assets/project/tder/scr1.png') no-repeat center center/cover;
+    
+    
+    filter: blur(6px) brightness(0.4); 
+    
+    z-index: -1;
+}
+
+.tdels-btn {
+    background-color: #a00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tdel-btn {
+    background-color: #aaa;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
