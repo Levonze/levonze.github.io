@@ -149,7 +149,7 @@
 }
 
 @media (max-width: 768px) {
-    .tder, .tdels, .tdel {
+    .tder, .tdels, .tdel, .hf {
         padding: 0 0.5rem;
 
         & p {
