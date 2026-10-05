@@ -1,4 +1,12 @@
-.tder, .tdels, .tdel {
+@font-face {
+    font-family: 'SoulEater'; 
+    src: url('/assets/fonts/SoulEater.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.tder, .tdels, .tdel, .hf {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +26,6 @@
     }
 }
 
-
 .tder::before {
     content: "";
     position: absolute;
@@ -26,7 +33,7 @@
     
     background: url('/assets/project/tder/scr3.png') no-repeat center center/cover;
     
-    filter: blur(6px) brightness(0.4); 
+    filter: blur(6px) brightness(0.6); 
     
     z-index: -1;
 }
@@ -57,43 +64,91 @@
     z-index: -1;
 }
 
-.tder-btn {
+.hf::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    
+    background: url('/assets/project/tder/hf_sewers.png') no-repeat center center/cover;
+    
+    
+    filter: blur(6px) brightness(0.2); 
+    
+    z-index: -1;
+}
+
+[class$="-btn"]{
+    margin: .5rem 0rem;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        transform: scale(0.95);
+        opacity: 0.8;
+        background-color: #a00;
+    }
+}
+
+[class$="-btn-active"]{
+    margin: .5rem 0rem;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: #0a0;
+    }
+}
+
+.tder-btn, .tder-btn-active {
     background-color: #bd00ce;
-    color: black;
-    font-weight: bold;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.tdels-btn {
+.tdels-btn, .tdels-btn-active {
     background-color: #a00;
-    color: black;
-    font-weight: bold;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.tdel-btn {
+.tdel-btn, .tdel-btn-active {
     background-color: #aaa;
-    color: black;
-    font-weight: bold;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-@media (max-width: 900px) {
+.hf-btn, .hf-btn-active {
+    background-color: #5c5c5c;
+}
+
+.hf-logo {
+    font-family: 'SoulEater', sans-serif;
+    font-size: 4.4rem !important;
+    color: #f00 !important;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    display: block;
+    max-width: 50%;
+}
+
+.logo-edition {
+    width: 50%;
+    height: auto;
+    display: block;
+    max-width: 25%;
+}
+
+@media (max-width: 768px) {
     .tder, .tdels, .tdel {
         padding: 0 0.5rem;
 
@@ -105,7 +160,19 @@
         }
     }
 
-    .logo{
-        height: 45px;
+    .logo {
+        width: 100%;
+        height: auto;
+        max-width: 75%;
+    }
+
+    .logo-edition{
+        width: 50%;
+        height: auto;
+        max-width: 50%;
+    }
+
+    .hf-logo {
+        font-size: 3rem !important;
     }
 }
