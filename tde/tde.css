@@ -148,6 +148,10 @@
     max-width: 25%;
 }
 
+.logo-edition-small{
+    max-width: 15%;
+}
+
 @media (max-width: 768px) {
     .tder, .tdels, .tdel, .hf {
         padding: 0 0.5rem;
@@ -174,5 +178,11 @@
 
     .hf-logo {
         font-size: 3rem !important;
+    }
+
+    .logo-edition-small{
+        width: 100%;
+        height: auto;
+        max-width: 50%;
     }
 }
