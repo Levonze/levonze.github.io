@@ -19,7 +19,7 @@
     overflow: hidden; 
 
     & p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: var(--text-secondary);
         max-width: 600px;
         margin-bottom: 2rem;

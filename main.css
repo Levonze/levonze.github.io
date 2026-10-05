@@ -381,4 +381,8 @@ footer {
     .project-thumbnail {
         height: 180px;
     }
+
+    p{
+        font-size: 1.1rem;
+    }
 }
