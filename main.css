@@ -6,6 +6,7 @@
     --accent: #a0a;
     --accent-hover: #b0b;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-radius: .2rem;
 }
 
 * {
@@ -76,7 +77,7 @@ nav a:hover {
     &::before{
         content: "";
         position: absolute;
-        inset: -20px;
+        inset: 0px;
         background: url('assets/project/tder/scr3.png') no-repeat center center/cover;
         filter: blur(6px) brightness(1); 
         z-index: -1;
@@ -122,11 +123,11 @@ nav a:hover {
     font-weight: bold;
     border-radius: 5px;
     border: 2px solid var(--accent);
-}
 
-.btn:hover {
-    background-color: transparent;
-    color: var(--accent);
+    &:hover {
+    background-color: black;
+    color: white;
+    }
 }
 
 .btn-outline {
@@ -178,19 +179,58 @@ section {
 .skill-tag {
     background-color: var(--card-bg);
     padding: 0.5rem 1.5rem;
-    border-radius: 50px;
+    border-radius: var(--border-radius);
     border: 1px solid #334155;
     color: var(--text-secondary);
-    transition: 0.3s;
-}
 
-/* LEGACY, they were buttons before
-.skill-tag:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-2px);
+    overflow: hidden;
+    max-height: 2.8rem; 
+    cursor: pointer;
+
+    
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.3s ease,
+                color 0.3s ease,
+                border-radius 0.3s ease;
+
+    
+    h4, hr, p {
+        margin: 0;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid currentColor;
+        margin: 0.5rem 0 !important;
+        opacity: 0.5;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    hr, p {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--secondary);
+        
+        max-height: 20rem; 
+        
+        border-radius: var(--border-radius); 
+
+        hr, p {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.3s ease 0.15s, transform 0.3s ease 0.15s;
+        }
+    }
 }
-*/
 
 
 .projects-grid {
@@ -206,17 +246,21 @@ section {
 .project-card {
     background-color: var(--card-bg);
     padding: 0;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: transform 0.3s;
     border: 1px solid #334155;
     width: 100%;
     max-width: 400px;
     overflow: hidden;
-}
 
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent);
+    .prj-btn{
+        background-color: var(--accent);
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
 }
 
 .project-thumbnail {
